@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:id="@+id/tvRecordItemName"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/clear"
+        android:id="@+id/imgBtnDelete"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvRecordItemName"
+        android:layout_marginTop="5dp"
+        android:id="@+id/itemDetailLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Price"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="$10.50"
+                android:id="@+id/tvRecordItemPrice"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Quantity"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="$10.50"
+                android:id="@+id/tvRecordItemQuantity"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.nex3z.flowlayout.FlowLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flChildSpacing="auto"
+        android:id="@+id/recordCheckboxes"
+        app:flChildSpacingForLastRow="align"
+        app:flRowSpacing="1dp"
+        android:layout_below="@id/itemDetailLayout">
+    </com.nex3z.flowlayout.FlowLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStatement"
+        android:layout_below="@id/recordCheckboxes"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="Each need to pay $10.00"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

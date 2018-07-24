@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvPersonSummary"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@id/container_toolbar"
+        android:layout_above="@+id/layoutFooter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/layoutFooter"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/footer"
+            android:layout_gravity="left">
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/total_dollar"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvAvg"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/footer"
+                android:gravity="center|left"
+                android:text="@string/avg"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="152dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/headerColor"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>

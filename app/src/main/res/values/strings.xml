@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TotalUp</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>Bill Diary</item>
+        <item>Setting</item>
+    </string-array>
+
+    <string name="title_activity_person_row">personRow</string>
+    <string name="dollar">$</string>
+    <string name="start_amt">$0.00</string>
+    <string name="total_dollar">Total: $00.50  </string>
+    <string name="total">Total: </string>
+    <string name="add">add Item</string>
+    <string name="submit">submit</string>
+    <string name="name">name</string>
+    <string name="howmuch">How much?</string>
+    <string name="done">done</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_price">Item Price</string>
+    <string name="ppl_paying">Who is Paying?</string>
+    <string name="all">All</string>
+    <string name="index">index</string>
+    <string name="splitEqual">Split Equally?</string>
+    <string name="avg">Average: $3000.60</string>
+    <string name="empty" />
+    <string name="save">Save to Diary</string>
+    <string name="title_activity_submit">SubmitActivity</string>
+    <string name="item_bought">Item Bought:</string>
+    <string name="needToPay">Pay: $0.00</string>
+    <string name="phone_num_hint">Phone Number Please</string>
+    <string name="pay">pay</string>
+    <string name="payment">How much you want to pay?</string>
+    <string name="left">Left To Pay</string>
+    <string name="paid">Have Been Paid</string>
+    <string name="total_amt">Total Amount:</string>
+    <string name="total_paid">Total Paid:</string>
+    <string name="two">2</string>
+    <string name="quantity">Quantity</string>
+    <string name="revert">revert</string>
+    <string name="deductDialog">How much do you want to deduct from the amount you paid?</string>
+    <string name="deduct">deduct</string>
+</resources>

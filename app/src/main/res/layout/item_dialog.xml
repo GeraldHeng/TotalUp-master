@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/itemDialog"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_name"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp" />
+
+    <EditText
+        android:id="@+id/etItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/empty"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/tvItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_price"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/etItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/empty"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/tvPplPaying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ppl_paying"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"/>
+
+    <com.nex3z.flowlayout.FlowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/checkboxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:flChildSpacing="auto"
+        app:flChildSpacingForLastRow="align"
+        app:flRowSpacing="8dp">
+
+    </com.nex3z.flowlayout.FlowLayout>
+
+    <CheckBox
+        android:id="@+id/cbAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/splitEqual" />
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number" />
+
+</LinearLayout>

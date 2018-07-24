@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person Name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:id="@+id/imgBtnDelete"
+        android:src="@drawable/clear" />
+
+    <EditText
+        android:id="@+id/etPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pName"
+        android:text="Gerald" />
+
+    <LinearLayout
+        android:id="@+id/amtLeftLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPersonName"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="Amount Left To Pay: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/tvPersonTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="$10.50"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amtLeftLayout"
+        android:layout_marginRight="10dp"
+        android:text="Phone Number"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/phoneLayout"
+        android:layout_below="@id/pNum">
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:inputType="number"
+            android:text="92386531" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message"
+            android:background="@null"
+            android:layout_weight="0.2"
+            android:id="@+id/imgBtnMessage"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"
+            android:background="@null"
+            android:layout_weight="0.2"
+            android:id="@+id/imgBtnCall"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect Phone"
+            android:layout_weight="1"
+            android:id="@+id/btnConnectToContacts"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deduct"
+            android:layout_weight="1"
+            android:id="@+id/btnDeduct"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay"
+            android:layout_weight="1"
+            android:id="@+id/btnPay"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+</RelativeLayout>

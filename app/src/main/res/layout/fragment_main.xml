@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/headerColor"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.92"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnRecords"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.92"
+                android:elevation="0dp"
+                android:text="Records" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvPerson"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layoutHeader" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAddPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layoutFooter"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/person_add"
+            app:backgroundTint="@color/headerColor"
+            app:elevation="0dp"
+            app:fabSize="normal" />
+
+        <LinearLayout
+            android:id="@+id/layoutFooter"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:background="@color/footer"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/total"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/start_amt"
+                android:textSize="30sp"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/headerColor"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
